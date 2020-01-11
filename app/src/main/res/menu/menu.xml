@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/ tools"
+    tools:context=".MainActivity">
+
+    <item android:title="Salir"
+        android:id="@+id/accion_salir"
+        android:orderInCategory="2"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="always"
+        />
+    <item android:title="Playlist"
+        android:id="@+id/activity_multimedia"
+        android:orderInCategory="4"
+        />
+    <item android:title="Login"
+        android:id="@+id/activity_login"
+        android:orderInCategory="4"
+        />
+</menu>

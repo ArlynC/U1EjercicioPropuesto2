@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/ tools"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <item android:title="Salir"
         android:id="@+id/accion_salir"
@@ -9,12 +9,8 @@
         android:icon="@android:drawable/ic_lock_power_off"
         app:showAsAction="always"
         />
-    <item android:title="Playlist"
-        android:id="@+id/activity_multimedia"
-        android:orderInCategory="4"
-        />
-    <item android:title="Login"
-        android:id="@+id/activity_login"
+    <item android:title="Registrar"
+        android:id="@+id/activity_registrar"
         android:orderInCategory="3"
         />
 </menu>

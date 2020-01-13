@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -47,7 +48,9 @@ public class Multimedia extends AppCompatActivity implements InterfaceToast{
 
     @Override
     public void mensaje(String mensaje) {
-        Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Multimedia2.class));
+
     }
 }
 

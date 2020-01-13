@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, Multimedia.class));
             return true;
         }
-
+        if (id == R.id.activity_login) {
+            startActivity(new Intent(this, Login.class));
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
 

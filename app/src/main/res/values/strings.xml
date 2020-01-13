@@ -12,4 +12,5 @@
     <string name="usuario">Usuario</string>
     <string name="contrasena">Contraseña</string>
     <string name="login">INICIAR SESIÓN</string>
+    <string name="registrar">Registrar</string>
 </resources>

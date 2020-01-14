@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.Vector;
 
@@ -22,12 +23,12 @@ public class Multimedia2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multimedia2);
 
-        mp = MediaPlayer.create(this, R.raw.musica);
+        mp = MediaPlayer.create(this, R.raw.mirah_thegarden);
 
         recyclerView2 = findViewById(R.id.recycler_view2);
         misdatos = new Vector<String>();
-        misdatos.add("Musica 1");
-        misdatos.add("123000 Pepito Domingez");
+        misdatos.add("The Garden");
+
         adaptador = new Adaptador2(this,
                 misdatos);
         recyclerView2.setAdapter(adaptador);
@@ -46,5 +47,22 @@ public class Multimedia2 extends AppCompatActivity {
     {
         super.onPause();
         mp.pause();
+    }
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        mp.stop();
+    }
+
+    public void onResume(View view) {
+        onResume();
+    }
+
+    public void onPause(View view) {
+        onPause();
+    }
+    public void bstop(View view) {
+        onStop();
     }
 }

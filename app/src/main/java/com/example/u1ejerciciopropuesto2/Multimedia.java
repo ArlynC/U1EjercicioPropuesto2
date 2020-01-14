@@ -29,15 +29,9 @@ public class Multimedia extends AppCompatActivity implements InterfaceToast{
         recyclerView = findViewById(R.id.recycler_view);
         misdatos = new Vector<String>();
         misdatos.add("Musica 1");
-        misdatos.add("123000 Pepito Domingez");
-        misdatos.add("123000 Pepito Domingez");
-        misdatos.add("111000 Pedro Martinez");
-        misdatos.add("011000 Paco Pérez");
-        misdatos.add("123000 Pepito Domingez");
-        misdatos.add("123000 Pepito Domingez");
-        misdatos.add("123000 Pepito Domingez");
-        misdatos.add("111000 Pedro Martinez");
-        misdatos.add("011000 Paco Pérez");
+        misdatos.add("All Of Me");
+        misdatos.add("The Garden");
+        misdatos.add("Work");
         adaptador = new MiAdaptador(this,
                 misdatos);
         recyclerView.setAdapter(adaptador);
